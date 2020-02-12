@@ -7,8 +7,7 @@ Angular material data table with pre-integrated search, sort, pagination server 
 This instruction will allow you to use our awesome data table:
 
 First you need to install 
-[Dropwizard](https://www.npmjs.com/package/@angular/material) - Angular Material Package
-With this commande:
+[Angular Material Package](https://www.npmjs.com/package/@angular/material) - With this commande:
 
 ```
 npm i @angular/material
@@ -26,7 +25,7 @@ npm i @thecreatiiives/angular-material-datatable
 
 and import it in your app module
 ```
-import { AngularMaterialDatatableModule } from 'angular-material-datatable';
+import { AngularMaterialDatatableModule } from '@thecreatiiives/angular-material-datatable';
 ....
 @NgModule({
   ....
@@ -56,6 +55,23 @@ getDatas(search, sortType, sortBy, page, maxRows) {
         sortBy,
         sortType
     });
+}
+```
+
+this API should return this format
+
+```
+{
+    "data":[
+        {
+            "id":29,
+            "firstname":"Aida",
+            "lastname":"Kutch",
+            ....
+        }
+    ],
+    "per_page":5,
+    "total":50
 }
 ```
 

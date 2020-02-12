@@ -15,7 +15,7 @@
     "email": "contact@thecreatiiives.com"
   },
   "homepage": "https://angular-material-datatable.thecreatiiives.com/",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
@@ -23,7 +23,16 @@
   "whitelistedNonPeerDependencies": {
     "@angular/material": "^8.2.3"
   },
-  "dependencies": {
-  },
-  "license": "MIT"
+  "dependencies": {},
+  "license": "MIT",
+  "keywords": [
+    "angular data table",
+    "angular datatable",
+    "material angular data table",
+    "material angular datatable",
+    "material data table",
+    "material datatable",
+    "datatable",
+    "data table"
+  ]
 }
