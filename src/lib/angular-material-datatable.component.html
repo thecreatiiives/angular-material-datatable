@@ -1,0 +1,47 @@
+<div class="tableCont">
+    <div *ngIf="search" class="searchCont">
+      <mat-form-field class="example-full-width">
+        <i matPrefix class="fa fa-search" style="padding-right: 10px;"></i>
+        <input type="search" matInput placeholder="Search" [(ngModel)]="datatablesearch" (keyup.enter)="loadCandidats()">
+      </mat-form-field>
+    </div>
+    <div class="tableSubCont">
+      <table mat-table [dataSource]="datas" matSort class="mat-elevation-z8 matDataTable {{cssClass}}">
+  
+        <ng-container
+          *ngFor="let column of columns"
+          matColumnDef="{{column.key}}"
+        >
+          <th class="tableTH" mat-header-cell *matHeaderCellDef mat-sort-header [style.width]="column.width">
+            {{column.value}}
+          </th>
+          <td mat-cell *matCellDef="let element" class="tableTD">
+            <span *ngIf="column.key === 'actions';else templateName">
+              <button 
+                mat-flat-button color="primary"
+                *ngFor="let action of actions" 
+                (click)="fireSendAction(action.code, element)"  
+                matTooltip="{{action.name}}" 
+                class="matDataTableBtn {{action.classe}}">
+                  <mat-icon class="matDataTableIcon" aria-hidden="false">{{action.icone}}</mat-icon>
+              </button>
+            </span>
+            <ng-template #templateName>
+              {{element[column.key]}}
+            </ng-template>
+            
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displaycolumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displaycolumns;"></tr>
+      </table>
+    </div>
+    <mat-progress-bar *ngIf="loading" class="progressBarClass" color="accent" bufferValue="75" mode="indeterminate"></mat-progress-bar>
+    <mat-paginator [length]="paginatorData.totalData"
+      [pageSize]="paginatorData.dataSize"
+      [pageSizeOptions]="pageSizeOptions"
+      (page)="pageEvent = loadCandidats()"
+      class="paginatorClass {{cssClass}}">
+    </mat-paginator>
+</div>

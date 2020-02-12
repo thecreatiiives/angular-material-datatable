@@ -1,0 +1,29 @@
+{
+  "name": "@thecreatiiives/angular-material-datatable",
+  "description": "Angular material data table with pre-integrated search, sort, pagination server side and also with customized columns width, colors, font and border style...",
+  "author": {
+    "email": "ezkeromar@gmail.com",
+    "name": "Omar EZKER",
+    "url": "https://www.npmjs.com/~ezkeromar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thecreatiiives/angular-material-datatable"
+  },
+  "bugs": {
+    "url": "https://github.com/thecreatiiives/angular-material-datatable/issues",
+    "email": "contact@thecreatiiives.com"
+  },
+  "homepage": "https://angular-material-datatable.thecreatiiives.com/",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "whitelistedNonPeerDependencies": {
+    "@angular/material": "^8.2.3"
+  },
+  "dependencies": {
+  },
+  "license": "MIT"
+}
