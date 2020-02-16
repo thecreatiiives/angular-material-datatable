@@ -14,8 +14,8 @@
     "url": "https://github.com/thecreatiiives/angular-material-datatable/issues",
     "email": "contact@thecreatiiives.com"
   },
-  "homepage": "https://angular-material-datatable.thecreatiiives.com/",
-  "version": "0.0.5",
+  "homepage": "https://datatable-demo.herokuapp.com/",
+  "version": "0.0.6",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"

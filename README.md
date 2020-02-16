@@ -2,6 +2,9 @@
 
 Angular material data table with pre-integrated search, sort, pagination server side and also with customized columns width, colors, font and border style...
 
+[Demo](https://datatable-demo.herokuapp.com/)
+[NPM Package](https://www.npmjs.com/package/@thecreatiiives/angular-material-datatable)
+
 ## Instalation
 
 This instruction will allow you to use our awesome data table:
